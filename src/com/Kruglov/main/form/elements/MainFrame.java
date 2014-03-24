@@ -39,23 +39,6 @@ public class MainFrame extends JFrame {
         setLocationRelativeTo(null);
         pack();
 
-        // buttons init
-        {
-            btnAdd = new JButton("Add");
-            btnExtract = new JButton("Extract");
-            btnRemove = new JButton("Remove");
-
-            btnBack = new JButton("Back");
-            btnFolder = new JButton("Folder");
-        }
-
-        // text line init
-        {
-            txtFilePath = new JTextField();
-            txtFilePath.setEditable(false);
-            txtFilePath.addMouseListener(lisTxtFilePath);
-        }
-
         // creating main menu
         {
             setJMenuBar(new MainMenu());
@@ -63,11 +46,19 @@ public class MainFrame extends JFrame {
 
         // initializing of navigation panel
         {
+            // buttons init
+            btnAdd = new JButton("Add");
+            btnExtract = new JButton("Extract");
+            btnRemove = new JButton("Remove");
+            //
+            //adding buttons to some JPanel, that will contain them
             buttonsContainer1 = new JPanel(new GridLayout(1, 3, 10, 0));
             buttonsContainer1.add(btnExtract);
             buttonsContainer1.add(btnAdd);
             buttonsContainer1.add(btnRemove);
 
+            // adding buttons' panel to navigation panel like 1 element
+            // to provide necessary view
             pNav = new JPanel(new FlowLayout(FlowLayout.LEFT));
             pNav.add(buttonsContainer1);
         }
@@ -75,7 +66,17 @@ public class MainFrame extends JFrame {
 
         // initializing of control panel
         {
-            pControl = new JPanel(new FlowLayout(FlowLayout.LEFT));
+            // text line init
+            txtFilePath = new JTextField();
+            txtFilePath.setEditable(false);
+            txtFilePath.addMouseListener(lisTxtFilePath);
+            //
+            //buttons init
+            btnBack = new JButton("Back");
+            btnFolder = new JButton("Folder");
+            //
+            //adding buttons and txt field to control panel
+            pControl = new JPanel();//(new FlowLayout(FlowLayout.LEFT));
             pControl.setLayout(new BoxLayout(pControl, BoxLayout.X_AXIS));
             pControl.add(btnBack);
             pControl.add(btnFolder);

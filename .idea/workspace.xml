@@ -92,8 +92,10 @@
       <file leaf-file-name="MainFrame.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/Kruglov/main/form/elements/MainFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="120" column="48" selection-start="4031" selection-end="4031" vertical-scroll-proportion="1.5824" vertical-offset="898" max-vertical-offset="2992">
-              <folding />
+            <state line="77" column="59" selection-start="2329" selection-end="2329" vertical-scroll-proportion="2.105" vertical-offset="314" max-vertical-offset="2584">
+              <folding>
+                <element signature="class#5030:5480" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -125,6 +127,8 @@
         <option value="$PROJECT_DIR$/src/com/Kruglov/main/form/elements/DataTable.java" />
         <option value="$PROJECT_DIR$/src/com/Kruglov/table/model/FileSystemTableModel.java" />
         <option value="$PROJECT_DIR$/src/com/Kruglov/file/system/model/SystemFile.java" />
+        <option value="$PROJECT_DIR$/src/com/Kruglov/main/form/elements/ControlPanel.java" />
+        <option value="$PROJECT_DIR$/src/com/Kruglov/main/form/elements/NavigationPanel.java" />
         <option value="$PROJECT_DIR$/src/com/Kruglov/main/form/elements/MainFrame.java" />
       </list>
     </option>
@@ -490,7 +494,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -509,8 +513,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15885799" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34562212" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15885799" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34562212" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="92" y="92" width="1182" height="584" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -639,7 +643,9 @@
     <entry file="file://$PROJECT_DIR$/src/com/Kruglov/main/form/elements/MainFrame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="0" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="2431">
-          <folding />
+          <folding>
+            <element signature="class#5030:5480" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -667,7 +673,9 @@
     <entry file="file://$PROJECT_DIR$/src/com/Kruglov/main/form/elements/MainFrame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="5" selection-start="676" selection-end="676" vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="2448">
-          <folding />
+          <folding>
+            <element signature="class#5030:5480" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -702,15 +710,8 @@
     <entry file="file://$PROJECT_DIR$/src/com/Kruglov/main/form/elements/MainFrame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="69" selection-start="364" selection-end="364" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="2414">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Kruglov/main/form/elements/DataTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="289">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="class#5030:5480" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -739,7 +740,9 @@
     <entry file="file://$PROJECT_DIR$/src/com/Kruglov/main/form/elements/MainFrame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="50" column="23" selection-start="1169" selection-end="1169" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="1972">
-          <folding />
+          <folding>
+            <element signature="class#5030:5480" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -800,15 +803,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Kruglov/main/form/elements/DataTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="4" selection-start="267" selection-end="267" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/Kruglov/table/model/BandedTableCellRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="51" selection-start="432" selection-end="432" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
@@ -841,8 +835,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/Kruglov/main/form/elements/MainFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="48" selection-start="4031" selection-end="4031" vertical-scroll-proportion="1.5824" vertical-offset="898" max-vertical-offset="2992">
-          <folding />
+        <state line="77" column="59" selection-start="2329" selection-end="2329" vertical-scroll-proportion="2.105" vertical-offset="314" max-vertical-offset="2584">
+          <folding>
+            <element signature="class#5030:5480" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
