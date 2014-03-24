@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="zip_archiver">
+    <output-path>$PROJECT_DIR$/out/artifacts/zip_archiver</output-path>
+    <root id="archive" name="zip_archiver.jar">
+      <element id="module-output" name="ZIP_Archiver" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>
