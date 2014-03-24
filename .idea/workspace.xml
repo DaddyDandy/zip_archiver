@@ -72,7 +72,7 @@
       <file leaf-file-name="SystemFile.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/Kruglov/file/system/model/SystemFile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="11" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1904">
+            <state line="6" column="11" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1904">
               <folding />
             </state>
           </provider>
@@ -81,7 +81,7 @@
       <file leaf-file-name="FileSystemTableModel.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/Kruglov/table/model/FileSystemTableModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="0" selection-start="995" selection-end="995" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="1632">
+            <state line="36" column="0" selection-start="995" selection-end="995" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="1632">
               <folding>
                 <element signature="e#1028#1029#0" expanded="true" />
               </folding>
@@ -92,9 +92,9 @@
       <file leaf-file-name="MainFrame.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/Kruglov/main/form/elements/MainFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="59" selection-start="2329" selection-end="2329" vertical-scroll-proportion="2.105" vertical-offset="314" max-vertical-offset="2584">
+            <state line="104" column="32" selection-start="3322" selection-end="3322" vertical-scroll-proportion="0.5347369" vertical-offset="1514" max-vertical-offset="3179">
               <folding>
-                <element signature="class#5030:5480" expanded="false" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -119,7 +119,6 @@
         <option value="$PROJECT_DIR$/src/com/Kruglov/IFile.java" />
         <option value="$PROJECT_DIR$/src/com/Kruglov/MainFrame.java" />
         <option value="$PROJECT_DIR$/src/com/Kruglov/main/form/elements/MainMenu.java" />
-        <option value="$PROJECT_DIR$/src/com/Kruglov/main/form/elements/PathFileDialog.java" />
         <option value="$PROJECT_DIR$/src/com/Kruglov/Program.java" />
         <option value="$PROJECT_DIR$/src/com/Kruglov/table/model/BandedTableCellRenderer.java" />
         <option value="$PROJECT_DIR$/src/com/Kruglov/file/system/model/IFile.java" />
@@ -129,6 +128,7 @@
         <option value="$PROJECT_DIR$/src/com/Kruglov/file/system/model/SystemFile.java" />
         <option value="$PROJECT_DIR$/src/com/Kruglov/main/form/elements/ControlPanel.java" />
         <option value="$PROJECT_DIR$/src/com/Kruglov/main/form/elements/NavigationPanel.java" />
+        <option value="$PROJECT_DIR$/src/com/Kruglov/main/form/elements/PathFileDialog.java" />
         <option value="$PROJECT_DIR$/src/com/Kruglov/main/form/elements/MainFrame.java" />
       </list>
     </option>
@@ -297,6 +297,11 @@
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
     <property name="SearchEverywhereHistory" value="" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\IT_Guru\ZIP_Archiver\src" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.Program">
     <configuration default="false" name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -514,7 +519,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15885799" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34562212" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23041475" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="92" y="92" width="1182" height="584" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -644,7 +649,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="0" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="2431">
           <folding>
-            <element signature="class#5030:5480" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -674,7 +679,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="5" selection-start="676" selection-end="676" vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="2448">
           <folding>
-            <element signature="class#5030:5480" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -711,7 +716,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="69" selection-start="364" selection-end="364" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="2414">
           <folding>
-            <element signature="class#5030:5480" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -741,7 +746,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="50" column="23" selection-start="1169" selection-end="1169" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="1972">
           <folding>
-            <element signature="class#5030:5480" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -749,13 +754,6 @@
     <entry file="file://$PROJECT_DIR$/src/com/Kruglov/main/form/elements/MainMenu.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="4" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="901">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Kruglov/main/form/elements/PathFileDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="8" selection-start="216" selection-end="216" vertical-scroll-proportion="0.3825" vertical-offset="0" max-vertical-offset="408">
           <folding />
         </state>
       </provider>
@@ -817,6 +815,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Kruglov/drawable/development/Applet16.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Kruglov/drawable/general/Add16.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Kruglov/drawable/general/Add24.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0/src.zip!/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2246" column="24" selection-start="95050" selection-end="95050" vertical-scroll-proportion="0.37469587" vertical-offset="36821" max-vertical-offset="58684">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Kruglov/main/form/elements/PathFileDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="51" selection-start="322" selection-end="322" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="578">
+          <folding>
+            <element signature="e#203#204#0" expanded="true" />
+            <element signature="e#230#231#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/Kruglov/file/system/model/SystemFile.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="11" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1904">
@@ -826,7 +856,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/Kruglov/table/model/FileSystemTableModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="0" selection-start="995" selection-end="995" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="1632">
+        <state line="36" column="0" selection-start="995" selection-end="995" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="1632">
           <folding>
             <element signature="e#1028#1029#0" expanded="true" />
           </folding>
@@ -835,9 +865,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/Kruglov/main/form/elements/MainFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="59" selection-start="2329" selection-end="2329" vertical-scroll-proportion="2.105" vertical-offset="314" max-vertical-offset="2584">
+        <state line="104" column="32" selection-start="3322" selection-end="3322" vertical-scroll-proportion="0.5347369" vertical-offset="1514" max-vertical-offset="3179">
           <folding>
-            <element signature="class#5030:5480" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

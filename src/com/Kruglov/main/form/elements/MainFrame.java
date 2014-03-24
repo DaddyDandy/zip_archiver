@@ -5,11 +5,9 @@ import com.Kruglov.table.model.BandedTableCellRenderer;
 import com.Kruglov.table.model.FileSystemTableModel;
 
 import javax.swing.*;
-import javax.swing.table.DefaultTableCellRenderer;
 import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
-import java.io.File;
 
 public class MainFrame extends JFrame {
 
@@ -29,6 +27,8 @@ public class MainFrame extends JFrame {
     private JTable tFiles;
 
     private SystemFile systemFile;
+    private final FileSystemTableModel fileSystemTableModel;
+    private final PathFileDialog pathFileDialog = new PathFileDialog();
 
     public MainFrame() throws HeadlessException {
 
@@ -47,7 +47,7 @@ public class MainFrame extends JFrame {
         // initializing of navigation panel
         {
             // buttons init
-            btnAdd = new JButton("Add");
+            btnAdd = new JButton("Add" , new ImageIcon("Add24.gif"));
             btnExtract = new JButton("Extract");
             btnRemove = new JButton("Remove");
             //
@@ -69,7 +69,7 @@ public class MainFrame extends JFrame {
             // text line init
             txtFilePath = new JTextField();
             txtFilePath.setEditable(false);
-            txtFilePath.addMouseListener(lisTxtFilePath);
+            txtFilePath.addMouseListener(filePathListener);
             //
             //buttons init
             btnBack = new JButton("Back");
@@ -96,11 +96,13 @@ public class MainFrame extends JFrame {
         // initializing of data table
         {
             systemFile = new SystemFile("E:/");
+
             txtFilePath.setText(systemFile.getPath());
-            final FileSystemTableModel fileSystemTableModel = new FileSystemTableModel(systemFile);
+
+            fileSystemTableModel = new FileSystemTableModel(systemFile);
+
             tFiles = new JTable(fileSystemTableModel);
             tFiles.setDefaultRenderer(fileSystemTableModel.getColumnClass(0), new BandedTableCellRenderer());
-
             tFiles.addMouseListener(new MouseListener() {
                 @Override
                 public void mouseClicked(MouseEvent e) {
@@ -138,8 +140,7 @@ public class MainFrame extends JFrame {
                 }
             });
 
-            int a;
-            //adding scroll panel for table
+            // adding scroll panel to table
             JScrollPane dataPanel = new JScrollPane(tFiles);
             // adding to main form
             add(dataPanel, BorderLayout.CENTER);
@@ -150,10 +151,10 @@ public class MainFrame extends JFrame {
     }
 
     // mouse listener for text field with data path
-    MouseListener lisTxtFilePath = new MouseListener() {
+    MouseListener filePathListener = new MouseListener() {
         @Override
         public void mouseClicked(MouseEvent e) {
-            new PathFileDialog();
+                pathFileDialog.setVisible(true);
         }
 
         @Override
