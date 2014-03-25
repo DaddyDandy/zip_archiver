@@ -1,13 +1,18 @@
 package com.Kruglov.file.system.model;
 
+import com.sun.javaws.exceptions.InvalidArgumentException;
+
 import java.io.File;
 
 public class SystemFile implements IFile {
 
     private File file;
 
-    public SystemFile(String pathName) {
+    public SystemFile(String pathName) throws InvalidArgumentException {
         file = new File(pathName);
+        //if(!file.exists()) {
+            //throw  new InvalidArgumentException(new String[] {pathName});
+        //}
     }
 
     @Override
@@ -73,14 +78,12 @@ public class SystemFile implements IFile {
     // took from File class
     @Override
     public IFile[] listFiles() {
-        String[] ss = file.list();
-        if (ss == null) return null;
-        int n = ss.length;
-        SystemFile[] fs = new SystemFile[n];
-        for (int i = 0; i < n; i++) {
-            fs[i] = new SystemFile(ss[i]);
-        }
-        return fs;
+        File[] files = file.listFiles();
+//        if (files != null) {
+//
+//        }
+        IFile[] iFiles = myListFiles(files);
+        return iFiles;
     }
 
     @Override
@@ -101,6 +104,97 @@ public class SystemFile implements IFile {
             fileExtension.append(nameSplit[0]);
         }
         return fileExtension.toString();
+    }
+
+    public static class RootSystemFile implements IFile {
+
+        @Override
+        public String getName() {
+            return null;
+        }
+
+        @Override
+        public String getParent() {
+            return null;
+        }
+
+        @Override
+        public String getPath() {
+            return null;
+        }
+
+        @Override
+        public String getAbsolutePath() {
+            return null;
+        }
+
+        @Override
+        public long lastModified() {
+            return 0;
+        }
+
+        @Override
+        public boolean isFile() {
+            return false;
+        }
+
+        @Override
+        public boolean isDirectory() {
+            return false;
+        }
+
+        @Override
+        public long size() {
+            return 0;
+        }
+
+        @Override
+        public boolean exists() {
+            return false;
+        }
+
+        @Override
+        public boolean delete() {
+            return false;
+        }
+
+        @Override
+        public void getInputStream() {
+
+        }
+
+        @Override
+        public void getOutputStream() {
+
+        }
+
+        @Override
+        public IFile[] listFiles() {
+            File[] files = File.listRoots();
+//        if (files != null) {
+//
+//        }
+            IFile[] iFiles = myListFiles(files);
+            return iFiles;
+        }
+
+        @Override
+        public String getFileExtension() {
+            return null;
+        }
+    }
+
+    private static IFile[] myListFiles(File[] files) {
+        IFile[] iFiles = new IFile[files.length];
+        int cntr = 0;
+        for (File f : files) {
+            try {
+                IFile iFile = new SystemFile(f.getAbsolutePath());
+                iFiles[cntr++] = iFile;
+            } catch (InvalidArgumentException ignored) {
+            }
+        }
+        return iFiles;
     }
 
 }
