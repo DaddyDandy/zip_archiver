@@ -1,6 +1,7 @@
 package com.Kruglov.table.model;
 
 import com.Kruglov.file.system.model.IFile;
+import com.sun.javaws.exceptions.InvalidArgumentException;
 
 import javax.swing.*;
 import javax.swing.event.TableModelListener;
@@ -21,20 +22,19 @@ public class FileSystemTableModel extends AbstractTableModel {
     // constructor
     // take current directory and make list of files of it
     public FileSystemTableModel(IFile currentDir) {
-            setCurrentDir(currentDir);
+        setCurrentDir(currentDir);
     }
 
     // change current directory
     public void setCurrentDir(IFile currentDir) {
         if (currentDir != null) {
             this.currentDir = currentDir;
-            this.files = currentDir.listFiles();
+            this.files = this.currentDir.listFiles();
         }
     }
 
     @Override
     public int getRowCount() {
-
         return files.length;
     }
 
@@ -61,8 +61,7 @@ public class FileSystemTableModel extends AbstractTableModel {
     public Class<?> getColumnClass(int columnIndex) {
         switch (columnIndex) {
             case 0:
-                //ПОМЕНЯТЬ на IFlie!!!!
-                return String.class;
+                return IFile.class;
             case 1:
                 return Long.class;
             case 2:
@@ -84,7 +83,6 @@ public class FileSystemTableModel extends AbstractTableModel {
         IFile file = this.files[rowIndex];
         switch (columnIndex) {
             case 0:
-                //ПОМЕНЯТЬ на IFlie!!!!
                 return file.getName();
             case 1:
                 return file.size();

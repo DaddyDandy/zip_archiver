@@ -72,43 +72,35 @@
       <file leaf-file-name="SystemFile.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/Kruglov/file/system/model/SystemFile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="71" selection-start="261" selection-end="261" vertical-scroll-proportion="0.0" vertical-offset="1666" max-vertical-offset="2210">
+            <state line="117" column="53" selection-start="2622" selection-end="2622" vertical-scroll-proportion="0.0" vertical-offset="1548" max-vertical-offset="2380">
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#getName#0;class#SystemFile#0" expanded="false" />
+                <element signature="method#getParent#0;class#SystemFile#0" expanded="false" />
                 <element signature="class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-                <element signature="method#getName#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-                <element signature="method#getParent#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-                <element signature="method#getPath#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-                <element signature="method#getAbsolutePath#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-                <element signature="method#lastModified#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-                <element signature="method#isFile#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-                <element signature="method#isDirectory#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-                <element signature="method#size#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-                <element signature="method#exists#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-                <element signature="method#delete#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-                <element signature="method#getInputStream#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-                <element signature="method#getOutputStream#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileSystemTableModel.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="FileSystemTableModel.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/Kruglov/table/model/FileSystemTableModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="39" selection-start="2169" selection-end="2169" vertical-scroll-proportion="1.071579" vertical-offset="800" max-vertical-offset="1870">
+            <state line="24" column="34" selection-start="773" selection-end="773" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="1853">
               <folding>
-                <element signature="e#993#994#0" expanded="true" />
-                <element signature="e#1029#1030#0" expanded="true" />
+                <element signature="e#1053#1054#0" expanded="true" />
+                <element signature="e#1088#1089#0" expanded="true" />
+                <element signature="e#1137#1138#0" expanded="true" />
+                <element signature="e#1172#1173#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainFrame.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="MainFrame.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/Kruglov/main/form/elements/MainFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="104" column="29" selection-start="3371" selection-end="3371" vertical-scroll-proportion="0.0" vertical-offset="1595" max-vertical-offset="3264">
+            <state line="166" column="47" selection-start="6275" selection-end="6275" vertical-scroll-proportion="3.0063157" vertical-offset="1394" max-vertical-offset="3621">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -116,10 +108,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainMenu.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/Kruglov/main/form/elements/MainMenu.java">
+      <file leaf-file-name="Observer.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/Kruglov/Observers/Observer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="4" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="901">
+            <state line="1" column="0" selection-start="31" selection-end="31" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Observable.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/Kruglov/Observers/Observable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="0" selection-start="31" selection-end="31" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BandedTableCellRenderer.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/Kruglov/table/model/BandedTableCellRenderer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="51" selection-start="432" selection-end="432" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
               <folding />
             </state>
           </provider>
@@ -146,12 +156,14 @@
         <option value="$PROJECT_DIR$/src/com/Kruglov/main/form/elements/MainMenu.java" />
         <option value="$PROJECT_DIR$/src/com/Kruglov/Program.java" />
         <option value="$PROJECT_DIR$/src/com/Kruglov/table/model/BandedTableCellRenderer.java" />
-        <option value="$PROJECT_DIR$/src/com/Kruglov/file/system/model/RemoteFile.java" />
         <option value="$PROJECT_DIR$/src/com/Kruglov/main/form/elements/DataTable.java" />
         <option value="$PROJECT_DIR$/src/com/Kruglov/main/form/elements/ControlPanel.java" />
         <option value="$PROJECT_DIR$/src/com/Kruglov/main/form/elements/NavigationPanel.java" />
         <option value="$PROJECT_DIR$/src/com/Kruglov/main/form/elements/PathFileDialog.java" />
+        <option value="$PROJECT_DIR$/src/com/Kruglov/Observers/Observable.java" />
+        <option value="$PROJECT_DIR$/src/com/Kruglov/Observers/Observer.java" />
         <option value="$PROJECT_DIR$/src/com/Kruglov/file/system/model/IFile.java" />
+        <option value="$PROJECT_DIR$/src/com/Kruglov/file/system/model/RemoteFile.java" />
         <option value="$PROJECT_DIR$/src/com/Kruglov/table/model/FileSystemTableModel.java" />
         <option value="$PROJECT_DIR$/src/com/Kruglov/file/system/model/SystemFile.java" />
         <option value="$PROJECT_DIR$/src/com/Kruglov/main/form/elements/MainFrame.java" />
@@ -225,6 +237,50 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Kruglov" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ZIP_Archiver" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ZIP_Archiver" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kruglov" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ZIP_Archiver" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ZIP_Archiver" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kruglov" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Observers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -509,6 +565,7 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32872504" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39938557" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -525,7 +582,6 @@
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="92" y="92" width="1182" height="584" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32872504" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -556,19 +612,9 @@
         <state line="6" column="11" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1904">
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#getName#0;class#SystemFile#0" expanded="false" />
+            <element signature="method#getParent#0;class#SystemFile#0" expanded="false" />
             <element signature="class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#getName#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#getParent#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#getPath#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#getAbsolutePath#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#lastModified#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#isFile#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#isDirectory#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#size#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#exists#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#delete#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#getInputStream#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#getOutputStream#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -577,8 +623,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="0" selection-start="995" selection-end="995" vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="1785">
           <folding>
-            <element signature="e#993#994#0" expanded="true" />
-            <element signature="e#1029#1030#0" expanded="true" />
+            <element signature="e#1053#1054#0" expanded="true" />
+            <element signature="e#1088#1089#0" expanded="true" />
+            <element signature="e#1137#1138#0" expanded="true" />
+            <element signature="e#1172#1173#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -604,19 +652,9 @@
         <state line="80" column="17" selection-start="1323" selection-end="1323" vertical-scroll-proportion="0.0" vertical-offset="1360" max-vertical-offset="1581">
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#getName#0;class#SystemFile#0" expanded="false" />
+            <element signature="method#getParent#0;class#SystemFile#0" expanded="false" />
             <element signature="class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#getName#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#getParent#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#getPath#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#getAbsolutePath#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#lastModified#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#isFile#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#isDirectory#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#size#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#exists#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#delete#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#getInputStream#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#getOutputStream#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -625,8 +663,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="0" selection-start="449" selection-end="449" vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="510">
           <folding>
-            <element signature="e#993#994#0" expanded="true" />
-            <element signature="e#1029#1030#0" expanded="true" />
+            <element signature="e#1053#1054#0" expanded="true" />
+            <element signature="e#1088#1089#0" expanded="true" />
+            <element signature="e#1137#1138#0" expanded="true" />
+            <element signature="e#1172#1173#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -650,19 +690,9 @@
         <state line="80" column="17" selection-start="1323" selection-end="1323" vertical-scroll-proportion="0.0" vertical-offset="1360" max-vertical-offset="1581">
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#getName#0;class#SystemFile#0" expanded="false" />
+            <element signature="method#getParent#0;class#SystemFile#0" expanded="false" />
             <element signature="class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#getName#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#getParent#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#getPath#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#getAbsolutePath#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#lastModified#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#isFile#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#isDirectory#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#size#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#exists#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#delete#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#getInputStream#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#getOutputStream#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -671,8 +701,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="0" selection-start="449" selection-end="449" vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="527">
           <folding>
-            <element signature="e#993#994#0" expanded="true" />
-            <element signature="e#1029#1030#0" expanded="true" />
+            <element signature="e#1053#1054#0" expanded="true" />
+            <element signature="e#1088#1089#0" expanded="true" />
+            <element signature="e#1137#1138#0" expanded="true" />
+            <element signature="e#1172#1173#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -696,19 +728,9 @@
         <state line="80" column="17" selection-start="1323" selection-end="1323" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1581">
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#getName#0;class#SystemFile#0" expanded="false" />
+            <element signature="method#getParent#0;class#SystemFile#0" expanded="false" />
             <element signature="class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#getName#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#getParent#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#getPath#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#getAbsolutePath#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#lastModified#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#isFile#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#isDirectory#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#size#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#exists#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#delete#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#getInputStream#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#getOutputStream#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -717,8 +739,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="4" selection-start="449" selection-end="449" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
           <folding>
-            <element signature="e#993#994#0" expanded="true" />
-            <element signature="e#1029#1030#0" expanded="true" />
+            <element signature="e#1053#1054#0" expanded="true" />
+            <element signature="e#1088#1089#0" expanded="true" />
+            <element signature="e#1137#1138#0" expanded="true" />
+            <element signature="e#1172#1173#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -751,19 +775,9 @@
         <state line="12" column="35" selection-start="278" selection-end="278" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1564">
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#getName#0;class#SystemFile#0" expanded="false" />
+            <element signature="method#getParent#0;class#SystemFile#0" expanded="false" />
             <element signature="class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#getName#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#getParent#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#getPath#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#getAbsolutePath#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#lastModified#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#isFile#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#isDirectory#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#size#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#exists#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#delete#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#getInputStream#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#getOutputStream#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -803,19 +817,9 @@
         <state line="10" column="48" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="697">
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#getName#0;class#SystemFile#0" expanded="false" />
+            <element signature="method#getParent#0;class#SystemFile#0" expanded="false" />
             <element signature="class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#getName#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#getParent#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#getPath#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#getAbsolutePath#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#lastModified#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#isFile#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#isDirectory#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#size#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#exists#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#delete#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#getInputStream#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#getOutputStream#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -848,11 +852,6 @@
         <state line="15" column="6" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="935">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Kruglov/main/form/elements/PathFileDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="319" selection-end="319" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="425" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/Kruglov/Program.java">
@@ -900,25 +899,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Kruglov/file/system/model/RemoteFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="24" selection-start="362" selection-end="362" vertical-scroll-proportion="0.4288" vertical-offset="106" max-vertical-offset="1394">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Kruglov/table/model/BandedTableCellRenderer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="51" selection-start="432" selection-end="432" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442" />
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0/src.zip!/java/io/File.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="471" column="18" selection-start="19678" selection-end="19678" vertical-scroll-proportion="0.0" vertical-offset="7283" max-vertical-offset="37570">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/Kruglov/drawable/development/Applet16.gif">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -936,65 +916,89 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0/src.zip!/java/lang/Class.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2246" column="24" selection-start="95050" selection-end="95050" vertical-scroll-proportion="0.37469587" vertical-offset="36821" max-vertical-offset="58684" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Kruglov/main/form/elements/PathFileDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="51" selection-start="322" selection-end="322" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="578" />
+        <state line="2246" column="24" selection-start="95050" selection-end="95050" vertical-scroll-proportion="0.37469587" vertical-offset="36821" max-vertical-offset="58684">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/Kruglov/main/form/elements/MainMenu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="4" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="901">
+        <state line="8" column="4" selection-start="181" selection-end="181" vertical-scroll-proportion="0.035789475" vertical-offset="85" max-vertical-offset="901">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Kruglov/table/model/BandedTableCellRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="51" selection-start="432" selection-end="432" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Kruglov/Observers/Observable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="31" selection-end="31" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Kruglov/Observers/Observer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="31" selection-end="31" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Kruglov/file/system/model/RemoteFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="78" column="8" selection-start="1165" selection-end="1177" vertical-scroll-proportion="0.9284211" vertical-offset="885" max-vertical-offset="1479">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/Kruglov/file/system/model/IFile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="9" selection-start="553" selection-end="553" vertical-scroll-proportion="0.0" vertical-offset="137" max-vertical-offset="731">
+        <state line="35" column="4" selection-start="558" selection-end="558" vertical-scroll-proportion="0.0" vertical-offset="256" max-vertical-offset="731">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Kruglov/main/form/elements/MainFrame.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0/src.zip!/java/io/File.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="29" selection-start="3371" selection-end="3371" vertical-scroll-proportion="0.0" vertical-offset="1595" max-vertical-offset="3264">
+        <state line="500" column="46" selection-start="20703" selection-end="20814" vertical-scroll-proportion="0.45238096" vertical-offset="7696" max-vertical-offset="37570">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Kruglov/table/model/FileSystemTableModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="34" selection-start="773" selection-end="773" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="1853">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1053#1054#0" expanded="true" />
+            <element signature="e#1088#1089#0" expanded="true" />
+            <element signature="e#1137#1138#0" expanded="true" />
+            <element signature="e#1172#1173#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/Kruglov/file/system/model/SystemFile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="71" selection-start="261" selection-end="261" vertical-scroll-proportion="0.0" vertical-offset="1666" max-vertical-offset="2210">
+        <state line="117" column="53" selection-start="2622" selection-end="2622" vertical-scroll-proportion="0.0" vertical-offset="1548" max-vertical-offset="2380">
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#getName#0;class#SystemFile#0" expanded="false" />
+            <element signature="method#getParent#0;class#SystemFile#0" expanded="false" />
             <element signature="class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#getName#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#getParent#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#getPath#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#getAbsolutePath#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#lastModified#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#isFile#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#isDirectory#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#size#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#exists#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#delete#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#getInputStream#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
-            <element signature="method#getOutputStream#0;class#RootSystemFile#0;class#SystemFile#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Kruglov/table/model/FileSystemTableModel.java">
+    <entry file="file://$PROJECT_DIR$/src/com/Kruglov/main/form/elements/MainFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="39" selection-start="2169" selection-end="2169" vertical-scroll-proportion="1.071579" vertical-offset="800" max-vertical-offset="1870">
+        <state line="166" column="47" selection-start="6275" selection-end="6275" vertical-scroll-proportion="3.0063157" vertical-offset="1394" max-vertical-offset="3621">
           <folding>
-            <element signature="e#993#994#0" expanded="true" />
-            <element signature="e#1029#1030#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
