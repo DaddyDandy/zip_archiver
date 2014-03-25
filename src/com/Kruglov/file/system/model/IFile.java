@@ -4,31 +4,34 @@ import java.io.File;
 
 public interface IFile {
 
-    String getName();
+    public String getName();
 
-    String getParent();
+    public String getParent();
 
-    String getPath();
+    public String getPath();
 
-    String getAbsolutePath();
+    public String getAbsolutePath();
 
-    long lastModified();
+    public long lastModified();
 
-    boolean isFile();
+    public boolean isFile();
 
-    boolean isDirectory();
+    public boolean isDirectory();
 
-    long size();
+    public long size();
 
-    boolean exists();
+    public boolean exists();
 
-    boolean delete();
+    public boolean delete();
 
-    void getInputStream();
+    public void getInputStream();
 
-    void getOutputStream();
+    public void getOutputStream();
 
-    IFile[] listFiles();
+    public IFile[] listFiles();
 
-    String getFileExtension();
+    public String getFileExtension();
+
+    //new
+    //public IFile getParentFile();
 }
