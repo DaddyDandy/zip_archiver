@@ -73,4 +73,9 @@ public class RemoteFile implements IFile {
     public String getFileExtension() {
         return null;
     }
+
+    @Override
+    public IFile getParentFile() {
+        return null;
+    }
 }
