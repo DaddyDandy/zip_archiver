@@ -3,6 +3,7 @@ package com.Kruglov.main.form.elements;
 import com.Kruglov.file.system.model.SystemFile;
 import com.Kruglov.table.model.BandedTableCellRenderer;
 import com.Kruglov.table.model.FileSystemTableModel;
+import com.sun.javaws.exceptions.InvalidArgumentException;
 
 import javax.swing.*;
 import java.awt.*;
@@ -63,7 +64,6 @@ public class MainFrame extends JFrame {
             pNav.add(buttonsContainer1);
         }
 
-
         // initializing of control panel
         {
             // text line init
@@ -95,50 +95,55 @@ public class MainFrame extends JFrame {
 
         // initializing of data table
         {
-            systemFile = new SystemFile("E:/");
+            try {
+                systemFile = new SystemFile("E:/");
+            } catch (InvalidArgumentException e) {
+                e.printStackTrace();
+            }
 
             txtFilePath.setText(systemFile.getPath());
-
-            fileSystemTableModel = new FileSystemTableModel(systemFile);
+            // работает!!! ))
+            fileSystemTableModel = new FileSystemTableModel(new SystemFile.RootSystemFile());
 
             tFiles = new JTable(fileSystemTableModel);
+            //написать для каждой колонки разные
             tFiles.setDefaultRenderer(fileSystemTableModel.getColumnClass(0), new BandedTableCellRenderer());
-            tFiles.addMouseListener(new MouseListener() {
-                @Override
-                public void mouseClicked(MouseEvent e) {
-                    if (e.getClickCount() >= 2) {
-                        //SystemFile root = (SystemFile) fileSystemTableModel.getValueAt(tFiles.getSelectedRow(), 3);
-                        SystemFile root = new SystemFile(fileSystemTableModel.
-                                getValueAt(tFiles.getSelectedRow(), 0).toString());
-                        txtFilePath.setText(root.getParent() + " " + root.getPath());
-//                        if(root != null) {
-//                            fileSystemTableModel.setCurrentDir(root);
-//                            //fileSystemTableModel.fireTableDataChanged();
-//                            //txtFilePath.setText(root.getAbsolutePath());
-//                        }
-                    }
-                }
-
-                @Override
-                public void mousePressed(MouseEvent e) {
-
-                }
-
-                @Override
-                public void mouseReleased(MouseEvent e) {
-
-                }
-
-                @Override
-                public void mouseEntered(MouseEvent e) {
-
-                }
-
-                @Override
-                public void mouseExited(MouseEvent e) {
-
-                }
-            });
+//            tFiles.addMouseListener(new MouseListener() {
+//                @Override
+//                public void mouseClicked(MouseEvent e) {
+//                    if (e.getClickCount() >= 2) {
+//                        //SystemFile root = (SystemFile) fileSystemTableModel.getValueAt(tFiles.getSelectedRow(), 3);
+//                        SystemFile root = new SystemFile(fileSystemTableModel.
+//                                getValueAt(tFiles.getSelectedRow(), 0).toString());
+//                        txtFilePath.setText(root.getParent() + " " + root.getPath());
+////                        if(root != null) {
+////                            fileSystemTableModel.setCurrentDir(root);
+////                            //fileSystemTableModel.fireTableDataChanged();
+////                            //txtFilePath.setText(root.getAbsolutePath());
+////                        }
+//                    }
+//                }
+//
+//                @Override
+//                public void mousePressed(MouseEvent e) {
+//
+//                }
+//
+//                @Override
+//                public void mouseReleased(MouseEvent e) {
+//
+//                }
+//
+//                @Override
+//                public void mouseEntered(MouseEvent e) {
+//
+//                }
+//
+//                @Override
+//                public void mouseExited(MouseEvent e) {
+//
+//                }
+//            });
 
             // adding scroll panel to table
             JScrollPane dataPanel = new JScrollPane(tFiles);
