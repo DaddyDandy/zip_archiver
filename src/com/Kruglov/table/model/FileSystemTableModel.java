@@ -34,6 +34,7 @@ public class FileSystemTableModel extends AbstractTableModel {
 
     @Override
     public int getRowCount() {
+
         return files.length;
     }
 
@@ -58,6 +59,15 @@ public class FileSystemTableModel extends AbstractTableModel {
 
     @Override
     public Class<?> getColumnClass(int columnIndex) {
+        switch (columnIndex) {
+            case 0:
+                //ПОМЕНЯТЬ на IFlie!!!!
+                return String.class;
+            case 1:
+                return Long.class;
+            case 2:
+                return Date.class;
+        }
         return String.class;
     }
 
@@ -68,9 +78,13 @@ public class FileSystemTableModel extends AbstractTableModel {
 
     @Override
     public Object getValueAt(int rowIndex, int columnIndex) {
+
+        assert rowIndex >= 0 && rowIndex < this.files.length;
+
         IFile file = this.files[rowIndex];
         switch (columnIndex) {
             case 0:
+                //ПОМЕНЯТЬ на IFlie!!!!
                 return file.getName();
             case 1:
                 return file.size();
