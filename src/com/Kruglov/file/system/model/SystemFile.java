@@ -9,15 +9,21 @@ public class SystemFile implements IFile {
     private File file;
 
     public SystemFile(String pathName) throws InvalidArgumentException {
+//        if(!file.exists()) {
+//            throw  new InvalidArgumentException(new String[] {pathName});
+//        } else {
+//
+//        }
         file = new File(pathName);
-        //if(!file.exists()) {
-            //throw  new InvalidArgumentException(new String[] {pathName});
-        //}
     }
 
     @Override
     public String getName() {
-        return file.getName();
+        if(file.getName() == null || file.getName().isEmpty()) {
+            return file.getPath();
+        } else {
+            return file.getName();
+        }
     }
 
     @Override
@@ -75,15 +81,14 @@ public class SystemFile implements IFile {
 
     }
 
-    // took from File class
     @Override
     public IFile[] listFiles() {
-        File[] files = file.listFiles();
-//        if (files != null) {
-//
-//        }
-        IFile[] iFiles = myListFiles(files);
-        return iFiles;
+        if (file != null) {
+            IFile[] iFiles = converterIFile(file.listFiles());
+            return iFiles;
+        } else {
+            return null;
+        }
     }
 
     @Override
@@ -104,6 +109,32 @@ public class SystemFile implements IFile {
             fileExtension.append(nameSplit[0]);
         }
         return fileExtension.toString();
+    }
+
+    @Override
+    public IFile getParentFile() {
+        String path = file.getParent();
+
+        if (path == null) return new RootSystemFile();
+        try {
+            return new SystemFile(path);
+        } catch (InvalidArgumentException e) {
+            e.printStackTrace();
+        }
+        return new RootSystemFile();
+    }
+
+    private static IFile[] converterIFile(File[] files) {
+        IFile[] iFiles = new IFile[files.length];
+        int cntr = 0;
+        for (File f : files) {
+            try {
+                IFile iFile = new SystemFile(f.getAbsolutePath());
+                iFiles[cntr++] = iFile;
+            } catch (InvalidArgumentException ignored) {
+            }
+        }
+        return iFiles;
     }
 
     public static class RootSystemFile implements IFile {
@@ -170,11 +201,7 @@ public class SystemFile implements IFile {
 
         @Override
         public IFile[] listFiles() {
-            File[] files = File.listRoots();
-//        if (files != null) {
-//
-//        }
-            IFile[] iFiles = myListFiles(files);
+            IFile[] iFiles = converterIFile(File.listRoots());
             return iFiles;
         }
 
@@ -182,19 +209,11 @@ public class SystemFile implements IFile {
         public String getFileExtension() {
             return null;
         }
-    }
 
-    private static IFile[] myListFiles(File[] files) {
-        IFile[] iFiles = new IFile[files.length];
-        int cntr = 0;
-        for (File f : files) {
-            try {
-                IFile iFile = new SystemFile(f.getAbsolutePath());
-                iFiles[cntr++] = iFile;
-            } catch (InvalidArgumentException ignored) {
-            }
+        @Override
+        public IFile getParentFile() {
+            return null;
         }
-        return iFiles;
     }
 
 }
