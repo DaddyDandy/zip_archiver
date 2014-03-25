@@ -7,35 +7,52 @@ import com.sun.javaws.exceptions.InvalidArgumentException;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
 public class MainFrame extends JFrame {
 
+    public static final int COLUMN_INDEX = -1;
+    public static final String BACK = "Back";
+    public static final String FOLDER = "Folder";
+    public static final String ADD = "Add";
+    public static final String EXTRACT = "Extract";
+    public static final String REMOVE = "Remove";
+    public static final String ADD24_GIF = "Add24.gif";
+    public static final int WIDTH_MAIN_FRAME = 350;
+    public static final int HEIGHT_MAIN_FRAME = 450;
+    public static final String ZIP_ARCHIVER_V1_0 = "ZIP Archiver v1.0";
+
+    // text field with file system path
     private JTextField txtFilePath;
 
+    // main form buttons
     private JButton btnExtract;
     private JButton btnAdd;
     private JButton btnRemove;
     private JButton btnBack;
     private JButton btnFolder;
 
+    // main form elements' containers
     private JPanel buttonsContainer1;
-
     private JPanel pNav;
     private JPanel pControl;
 
+    // main table, that displays file system
     private JTable tFiles;
 
-    private SystemFile systemFile;
+    // type of file system
+    private SystemFile root;
+
+    // abstract class for tFiles JTable, that provide displaying information of file system
     private final FileSystemTableModel fileSystemTableModel;
-    private final PathFileDialog pathFileDialog = new PathFileDialog();
 
     public MainFrame() throws HeadlessException {
 
         // initializing main form
-        super("ZIP Archiver v1.0");
-        setMinimumSize(new Dimension(350, 450));
+        super(ZIP_ARCHIVER_V1_0);
+        setMinimumSize(new Dimension(WIDTH_MAIN_FRAME, HEIGHT_MAIN_FRAME));
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         pack();
@@ -48,9 +65,9 @@ public class MainFrame extends JFrame {
         // initializing of navigation panel
         {
             // buttons init
-            btnAdd = new JButton("Add" , new ImageIcon("Add24.gif"));
-            btnExtract = new JButton("Extract");
-            btnRemove = new JButton("Remove");
+            btnAdd = new JButton(ADD, new ImageIcon(ADD24_GIF));
+            btnExtract = new JButton(EXTRACT);
+            btnRemove = new JButton(REMOVE);
             //
             //adding buttons to some JPanel, that will contain them
             buttonsContainer1 = new JPanel(new GridLayout(1, 3, 10, 0));
@@ -69,11 +86,48 @@ public class MainFrame extends JFrame {
             // text line init
             txtFilePath = new JTextField();
             txtFilePath.setEditable(false);
-            txtFilePath.addMouseListener(filePathListener);
             //
             //buttons init
-            btnBack = new JButton("Back");
-            btnFolder = new JButton("Folder");
+            btnBack = new JButton(BACK);
+            btnBack.addMouseListener(new MouseListener() {
+                @Override
+                public void mouseClicked(MouseEvent e) {
+                    if (root.getParentFile().getClass() == SystemFile.class) {
+                        root = (SystemFile) root.getParentFile();
+                        // MAST USE OBSERVER FOR THIS!!!
+                        fileSystemTableModel.setCurrentDir(root);
+                        txtFilePath.setText(root.getAbsolutePath());
+                    } else if (root.getParentFile().getClass() == SystemFile.RootSystemFile.class) {
+                        // MAST USE OBSERVER FOR THIS!!!
+                        fileSystemTableModel.setCurrentDir(new SystemFile.RootSystemFile());
+                        txtFilePath.setText(" ");
+                    }
+                    // MAST USE OBSERVER FOR THIS!!!
+                    tFiles.updateUI();
+                }
+
+                @Override
+                public void mousePressed(MouseEvent e) {
+
+                }
+
+                @Override
+                public void mouseReleased(MouseEvent e) {
+
+                }
+
+                @Override
+                public void mouseEntered(MouseEvent e) {
+
+                }
+
+                @Override
+                public void mouseExited(MouseEvent e) {
+
+                }
+            });
+            btnFolder = new JButton(FOLDER);
+            btnFolder.setEnabled(false);
             //
             //adding buttons and txt field to control panel
             pControl = new JPanel();//(new FlowLayout(FlowLayout.LEFT));
@@ -95,57 +149,52 @@ public class MainFrame extends JFrame {
 
         // initializing of data table
         {
-            try {
-                systemFile = new SystemFile("E:/");
-            } catch (InvalidArgumentException e) {
-                e.printStackTrace();
-            }
-
-            txtFilePath.setText(systemFile.getPath());
-            // работает!!! ))
             fileSystemTableModel = new FileSystemTableModel(new SystemFile.RootSystemFile());
-
             tFiles = new JTable(fileSystemTableModel);
-            //написать для каждой колонки разные
-            tFiles.setDefaultRenderer(fileSystemTableModel.getColumnClass(0), new BandedTableCellRenderer());
-//            tFiles.addMouseListener(new MouseListener() {
-//                @Override
-//                public void mouseClicked(MouseEvent e) {
-//                    if (e.getClickCount() >= 2) {
-//                        //SystemFile root = (SystemFile) fileSystemTableModel.getValueAt(tFiles.getSelectedRow(), 3);
-//                        SystemFile root = new SystemFile(fileSystemTableModel.
-//                                getValueAt(tFiles.getSelectedRow(), 0).toString());
-//                        txtFilePath.setText(root.getParent() + " " + root.getPath());
-////                        if(root != null) {
-////                            fileSystemTableModel.setCurrentDir(root);
-////                            //fileSystemTableModel.fireTableDataChanged();
-////                            //txtFilePath.setText(root.getAbsolutePath());
-////                        }
-//                    }
-//                }
-//
-//                @Override
-//                public void mousePressed(MouseEvent e) {
-//
-//                }
-//
-//                @Override
-//                public void mouseReleased(MouseEvent e) {
-//
-//                }
-//
-//                @Override
-//                public void mouseEntered(MouseEvent e) {
-//
-//                }
-//
-//                @Override
-//                public void mouseExited(MouseEvent e) {
-//
-//                }
-//            });
 
-            // adding scroll panel to table
+            //написать для каждой колонки разные
+            // styles for DataTable columns & right displaying of information in them
+            tFiles.setDefaultRenderer(fileSystemTableModel.getColumnClass(0), new BandedTableCellRenderer());
+            tFiles.setDefaultRenderer(fileSystemTableModel.getColumnClass(1), new BandedTableCellRenderer());
+            tFiles.setDefaultRenderer(fileSystemTableModel.getColumnClass(2), new BandedTableCellRenderer());
+            // adding mouse listener for table's rows to make file system
+            // when you're clicking on the row(if it's folder), thah you go to that folder
+            tFiles.addMouseListener(new MouseListener() {
+                @Override
+                public void mouseClicked(MouseEvent e) {
+                    if (e.getClickCount() >= 2) {
+                        int rootRow = tFiles.getSelectedRow();
+                        root = (SystemFile) fileSystemTableModel.getValueAt(rootRow, COLUMN_INDEX);
+                        if(root != null) {
+                            fileSystemTableModel.setCurrentDir(root);
+                            tFiles.updateUI();
+                        }
+                        txtFilePath.setText(root.getAbsolutePath());
+                    }
+                }
+
+                @Override
+                public void mousePressed(MouseEvent e) {
+
+                }
+
+                @Override
+                public void mouseReleased(MouseEvent e) {
+
+                }
+
+                @Override
+                public void mouseEntered(MouseEvent e) {
+
+                }
+
+                @Override
+                public void mouseExited(MouseEvent e) {
+
+                }
+            });
+
+            //adding scroll panel to table
             JScrollPane dataPanel = new JScrollPane(tFiles);
             // adding to main form
             add(dataPanel, BorderLayout.CENTER);
@@ -154,33 +203,5 @@ public class MainFrame extends JFrame {
         // set form visible
         setVisible(true);
     }
-
-    // mouse listener for text field with data path
-    MouseListener filePathListener = new MouseListener() {
-        @Override
-        public void mouseClicked(MouseEvent e) {
-                pathFileDialog.setVisible(true);
-        }
-
-        @Override
-        public void mousePressed(MouseEvent e) {
-
-        }
-
-        @Override
-        public void mouseReleased(MouseEvent e) {
-
-        }
-
-        @Override
-        public void mouseEntered(MouseEvent e) {
-
-        }
-
-        @Override
-        public void mouseExited(MouseEvent e) {
-
-        }
-    };
 
 }
