@@ -33,5 +33,5 @@ public interface IFile {
     public String getFileExtension();
 
     //new
-    //public IFile getParentFile();
+    public IFile getParentFile();
 }
